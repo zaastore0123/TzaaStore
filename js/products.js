@@ -57,5 +57,9 @@ const page2 = [
     link: 'https://wa.me/628813908290?text=Halo+Admin+saya+ingin+beli+Slot+Store+2'
   }
 ];
+const products = [
+  { img: "img/a.jpg", title: "Produk A", desc: "Deskripsi A", price: "Rp 20.000", link: "https://wa.me/628813908290?text=Halo+saya+ingin+beli+Produk+A" },
+  { img: "img/b.jpg", title: "Produk B", desc: "Deskripsi B", price: "Rp 25.000", link: "https://wa.me/628813908290?text=Halo+saya+ingin+beli+Produk+B" }
+];
 
 export { page1, page2 };
