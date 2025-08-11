@@ -3,7 +3,8 @@ const produkImages = {
   A: "https://files.catbox.moe/mugoxo.png",
   B: "https://files.catbox.moe/your-image-b.png",
   C: "https://files.catbox.moe/your-image-c.png",
-  D: "https://files.catbox.moe/your-image-d.png"
+  D: "https://files.catbox.moe/your-image-d.png",
+  E: "https://files.catbox.moe/your-image-d.png"
 };
 
 const page1 = [];
@@ -25,14 +26,15 @@ page1.push({
   link: "https://wa.me/628813908290?text=Halo+Admin+saya+ingin+beli+Panel+Unlimited"
 });
 
-["A", "B", "C", "D"].forEach(letter => {
+["A", "B", "C", "D", "E"].forEach(letter => {
   page1.push({
     img: produkImages[letter],
     title: `Produk ${letter}`,
     desc: `Deskripsi produk ${letter} yang menarik dan berkualitas.`,
     price: letter === "A" ? "Rp 20.000" :
            letter === "B" ? "Rp 25.000" :
-           letter === "C" ? "Rp 30.000" : "Rp 35.000",
+           letter === "C" ? "Rp 30.000" :
+          letter === "D" ? "Rp 35.000" : "Rp 40.000",
     link: `https://wa.me/628813908290?text=Halo+Admin+saya+ingin+beli+Produk+${letter}`
   });
 });
