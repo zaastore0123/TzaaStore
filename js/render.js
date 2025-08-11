@@ -13,3 +13,18 @@ export function renderProducts(container, products) {
     container.appendChild(card);
   });
 }
+function renderProducts(productArray) {
+  const container = document.getElementById("product-list");
+  container.innerHTML = "";
+  productArray.forEach(p => {
+    container.innerHTML += `
+      <div class="product">
+        <img src="${p.img}" alt="${p.title}">
+        <h3>${p.title}</h3>
+        <p>${p.desc}</p>
+        <strong>${p.price}</strong><br>
+        <a href="${p.link}" target="_blank">Beli</a>
+      </div>
+    `;
+  });
+}
