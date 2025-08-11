@@ -34,7 +34,9 @@ page1.push({
     price: letter === "A" ? "Rp 20.000" :
            letter === "B" ? "Rp 25.000" :
            letter === "C" ? "Rp 30.000" :
-          letter === "D" ? "Rp 35.000" : "Rp 40.000",
+          letter === "D" ? "Rp 35.000" :
+           letter === "E" ? "Rp 40.000":
+                            "Rp 45.000",
     link: `https://wa.me/628813908290?text=Halo+Admin+saya+ingin+beli+Produk+${letter}`
   });
 });
